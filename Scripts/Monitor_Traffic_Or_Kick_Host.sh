@@ -42,10 +42,10 @@ case $command in
     sudo aireplay-ng -0 0 -a "$mac" wlan0
     ;;
   "Traffic_On_BSSID")
-    sudo airodump-ng --bssid "$mac" -c 6 wlan0mon
+    sudo airodump-ng --bssid "$mac" -c 6 wlan0
     ;;
   "All_Traffic")
-    sudo airodump-ng wlan0mon
+    sudo airodump-ng wlan0
     ;;
   *)
     echo "Invalid command: $command"
